@@ -1,10 +1,8 @@
-# Title (replace with your title)
+# Analyzing the Regular Expression Representation of an email
 
 Introductory paragraph (replace this with your text)
 
 ## Summary
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
@@ -42,6 +40,11 @@ In Regex, the quantifiers are * + ? { n } {n ,} and {n, m}
 { n } match exactly n number of times
 {N ,} match at least n number of times
 
+So in our case [a-z0-9_\.-]+ says that we are looking for one or more characters that are either lowercase letters, numbers or ( _ ) ( . ) or ( - ).
+
+... then [\da-z\.-]+ => one or more characters that are either digits (\d) lowercase letters, a period or a hyphen
+
+... and finally [a-z\.]{2,6} between 2 and 6 characters that are either lowercase letters or a period
 ### OR Operator
 
 ### Character Classes
